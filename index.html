@@ -10,21 +10,32 @@
 
 <body id="top" class="bg-gray-900 text-white font-sans">
     <!-- Header Section -->
-    <div class="flex justify-between items-center p-4 bg-gray-800">
+    <div class="flex justify-between items-center p-2 bg-gray-800">
         <div class="flex items-center">
-            <img src="asset/endie.png" alt="ENDIE_PRO Logo" class="h-8 md:h-12 mr-2 md:mr-3">
-            <h1 class="text-xl md:text-3xl font-bold text-purple-300">Endie_pro</h1>
+            <img src="asset/endie.png" alt="ENDIE_PRO Logo" class="h-6 sm:h-8 md:h-12 mr-2 sm:mr-3">
+            <h1 class="text-sm sm:text-lg md:text-3xl font-bold text-purple-300">Endie_pro</h1>
         </div>
-        <div class="flex items-center">
-            <a href="#contact" class="text-xl md:text-3xl font-bold text-purple-300 hover:text-white transition duration-300">Contact⬇️</a>
+
+        <!-- Version desktop : affichage du lien Contact⬇️ -->
+        <div class="hidden md:flex items-center">
+            <a href="#contact" class="text-sm sm:text-lg md:text-2xl font-bold text-purple-300 hover:text-white transition duration-300">
+                Contact⬇️
+            </a>
+        </div>
+
+        <!-- Version mobile : affichage d'un icône simple ou plus adapté pour mobile -->
+        <div class="flex md:hidden items-center">
+            <a href="#contact" class="text-sm font-bold text-purple-300 hover:text-white transition duration-300">
+                📞
+            </a>
         </div>
     </div>
     
-    <div class="max-w-6xl mx-auto py-10 px-4">
+    <div class="max-w-6xl mx-auto py-6 sm:py-10 px-2 sm:px-4">
         <!-- Section One -->
-        <div class="grid md:grid-cols-2 gap-10 mb-10">
+        <div class="grid md:grid-cols-2 gap-6 sm:gap-10 mb-6 sm:mb-10">
             <div>
-                <p class="text-lg mb-6 text-gray-300">
+                <p class="text-xs sm:text-base md:text-lg mb-4 sm:mb-6 text-gray-300">
                     Bonjour ! Je suis un passionné des services multimédias, un véritable touche-à-tout dans le monde
                     numérique. En tant que photographe et vidéaste, je capture et immortalise les moments les plus
                     précieux. En parallèle, je suis également développeur web, créant des expériences en ligne uniques
@@ -37,7 +48,7 @@
                     éveiller les esprits.
                 </p>
             </div>
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-2 gap-2 sm:gap-4">
                 <img src="asset/blanc.png" alt="Image 1"
                     class="w-full h-auto rounded-lg hover:opacity-75 transition duration-300">
                 <img src="asset/prof.png" alt="Image 2"
@@ -51,91 +62,88 @@
     </div>
 
     <!-- Section Two -->
-    <div class="bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-500 p-10 rounded-lg mb-10 mx-auto max-w-6xl shadow-lg">
-        <div class="grid md:grid-cols-3 gap-10 mb-10">
+    <div class="bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-500 p-4 sm:p-6 md:p-10 rounded-lg mb-6 sm:mb-10 mx-auto max-w-6xl shadow-lg">
+        <!-- Image Grid Section -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-10 mb-4 sm:mb-6">
             <div class="flex items-center justify-center">
                 <img src="asset/gl.png" alt="Guylain Image"
-                    class="h-32 rounded-full border-5 border-white shadow-lg transform hover:scale-110 transition duration-300 ease-in-out">
+                    class="h-16 sm:h-24 md:h-32 rounded-full border-4 md:border-5 border-white shadow-lg transform hover:scale-110 transition duration-300 ease-in-out">
             </div>
             <div class="flex items-center justify-center">
                 <img src="asset/sp.png" alt="Souvenir Pro"
-                    class="h-32 rounded-full border-5 border-white shadow-lg transform hover:scale-110 transition duration-300 ease-in-out">
+                    class="h-16 sm:h-24 md:h-32 rounded-full border-4 md:border-5 border-white shadow-lg transform hover:scale-110 transition duration-300 ease-in-out">
             </div>
             <div class="flex items-center justify-center">
                 <img src="asset/uns.png" alt="Univers du Scientifique"
-                    class="h-32 rounded-full border-5 border-white shadow-lg transform hover:scale-110 transition duration-300 ease-in-out">
+                    class="h-16 sm:h-24 md:h-32 rounded-full border-4 md:border-5 border-white shadow-lg transform hover:scale-110 transition duration-300 ease-in-out">
             </div>
         </div>
-        <p class="text-lg mb-6 text-white">
-            Au sein de mes collaborations chez Guylain Image, Souvenir Pro et Univers du Scientifique, je suis entouré
-            d'une équipe exceptionnelle. Chaque membre apporte une expertise unique et une passion débordante pour son
-            domaine. Chez Guylain Image, nous partageons une vision commune : capturer l'essence de chaque moment à
-            travers la photographie, créant ainsi des souvenirs intemporels pour nos clients.
-        </p>
-        <p class="text-lg mb-6 text-white">
-            Chez Souvenir Pro, nos collaborateurs sont dévoués à l'art du montage vidéo. Leur maîtrise des techniques
-            de post-production donne vie à des histoires uniques et émouvantes, transformant des moments ordinaires en
-            véritables chefs-d'œuvre cinématographiques.
-        </p>
-        <p class="text-lg text-white">
-            Enfin, chez Univers du Scientifique, je suis honoré de travailler aux côtés de professionnels passionnés par
-            l'orientation des études à l'étranger et le coaching académique. Leur expertise guide nos clients à travers
-            les complexités des parcours éducatifs internationaux, les aidant à atteindre leurs objectifs avec succès.
-            Ensemble, nous formons une équipe dynamique, offrant des expériences uniques et mémorables. C'est un
-            privilège de collaborer avec des individus aussi talentueux et passionnés.
-        </p>
+    
+        <!-- Text Content Section -->
+        <div class="text-white">
+            <p class="text-xs sm:text-sm md:text-lg mb-4">
+                Au sein de mes collaborations chez <strong>Guylain Image</strong>, <strong>Souvenir Pro</strong> et <strong>Univers du Scientifique</strong>, je suis entouré d'une équipe exceptionnelle. Chaque membre apporte une expertise unique et une passion débordante pour son domaine. Chez <strong>Guylain Image</strong>, nous partageons une vision commune : capturer l'essence de chaque moment à travers la photographie, créant ainsi des souvenirs intemporels pour nos clients.
+            </p>
+            <p class="text-xs sm:text-sm md:text-lg mb-4">
+                Chez <strong>Souvenir Pro</strong>, nos collaborateurs sont dévoués à l'art du montage vidéo. Leur maîtrise des techniques de post-production donne vie à des histoires uniques et émouvantes, transformant des moments ordinaires en véritables chefs-d'œuvre cinématographiques.
+            </p>
+            <p class="text-xs sm:text-sm md:text-lg">
+                Enfin, chez <strong>Univers du Scientifique</strong>, je suis honoré de travailler aux côtés de professionnels passionnés par l'orientation des études à l'étranger et le coaching académique. Leur expertise guide nos clients à travers les complexités des parcours éducatifs internationaux, les aidant à atteindre leurs objectifs avec succès. Ensemble, nous formons une équipe dynamique, offrant des expériences uniques et mémorables. C'est un privilège de collaborer avec des individus aussi talentueux et passionnés.
+            </p>
+        </div>
     </div>
     
+    
+    <div class="text-center mb-6 sm:mb-10">
+        <a href="#top" class="text-purple-300 hover:text-white transition duration-300">⬆️ Remonter en haut</a>
+    </div>
 
     <!-- Contact Section -->
-    <div id="contact" class="max-w-6xl mx-auto py-10 px-4">
-        <div class="text-center mb-10 bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold text-purple-300 mb-4">Contactez-moi</h2>
-            <div class="flex flex-col items-center gap-6 mb-6">
-                <!-- Snapchat -->
-                <div class="flex items-center gap-4">
-                    <a href="https://snapchat.com/add/endie_pro"
-                        class="text-white hover:text-gray-400 transition duration-300 transform hover:scale-110">
-                        <i class="fab fa-snapchat-ghost text-4xl"></i>
-                    </a>
-                    <span class="text-lg text-gray-300">Snapchat : endie_pro</span>
-                </div>
-
-                <!-- Instagram -->
-                <div class="flex items-center gap-4">
-                    <a href="https://www.instagram.com/endie_pro"
-                        class="text-white hover:text-gray-400 transition duration-300 transform hover:scale-110">
-                        <i class="fab fa-instagram text-4xl"></i>
-                    </a>
-                    <span class="text-lg text-gray-300">Instagram : endie_pro</span>
-                </div>
+<div id="contact" class="max-w-6xl mx-auto py-6 sm:py-10 px-4 sm:px-6">
+    <div class="text-center mb-6 sm:mb-10 bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg">
+        <h2 class="text-base sm:text-xl md:text-2xl font-bold text-purple-300 mb-4">Contactez-moi</h2>
+        
+        <!-- Social Media Links -->
+        <div class="flex flex-col items-center gap-6 mb-6">
+            
+            <!-- Snapchat -->
+            <div class="flex items-center gap-3">
+                <a href="https://snapchat.com/add/endie_pro"
+                    class="text-white hover:text-gray-400 transition duration-300 transform hover:scale-110">
+                    <i class="fab fa-snapchat-ghost text-2xl sm:text-3xl md:text-4xl"></i>
+                </a>
+                <span class="text-sm sm:text-base md:text-lg text-gray-300">Snapchat : endie_pro</span>
             </div>
-            <p class="contact text-lg text-gray-300">Téléphone : <a href="tel:+33753720775"
-                    class="text-white hover:text-gray-400 transition duration-300">+33 753720775</a></p>
+
+            <!-- Instagram -->
+            <div class="flex items-center gap-3">
+                <a href="https://www.instagram.com/endie_pro"
+                    class="text-white hover:text-gray-400 transition duration-300 transform hover:scale-110">
+                    <i class="fab fa-instagram text-2xl sm:text-3xl md:text-4xl"></i>
+                </a>
+                <span class="text-sm sm:text-base md:text-lg text-gray-300">Instagram : endie_pro</span>
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-center gap-3">
+                <i class="fas fa-envelope text-white text-2xl sm:text-3xl md:text-4xl"></i>
+                <span class="text-sm sm:text-base md:text-lg text-gray-300">Email : endiepro4@gmail.com</span>
+            </div>
         </div>
 
-        <div class="text-center mb-10">
-            <a href="#top" class="text-purple-300 hover:text-white transition duration-300">⬆️ Remonter en haut</a>
-        </div>
-        <!-- Contact Section -->
-<div id="contact" class="max-w-6xl mx-auto py-10 px-4">
-    <div class="text-center mb-10 bg-gray-800 p-6 rounded-lg shadow-lg">
-        <h2 class="text-2xl font-bold text-purple-300 mb-4">Mes Contactez</h2>
-        <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" class="flex flex-col items-center space-y-4">
-            <input type="text" name="name" placeholder="Votre nom" required class="w-full md:w-1/2 p-3 rounded-lg border border-gray-700 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-purple-500">
-            <input type="email" name="email" placeholder="Votre email" required class="w-full md:w-1/2 p-3 rounded-lg border border-gray-700 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-purple-500">
-            <textarea name="message" placeholder="Votre message" rows="4" required class="w-full md:w-1/2 p-3 rounded-lg border border-gray-700 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
-            <button type="submit" class="p-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition duration-300">Envoyer</button>
-        </form>
-        <p id="form-response" class="text-gray-300 mt-4"></p>
+        <!-- Telephone -->
+        <p class="text-sm sm:text-base md:text-lg text-gray-300">
+            Téléphone : 
+            <a href="tel:+33753720775" class="text-white hover:text-gray-400 transition duration-300">
+                +33 753720775
+            </a>
+        </p>
     </div>
 </div>
 
-    </div>
 
-    
     <footer class="bg-gray-800 py-4 text-center text-gray-400">
-        <p class="text-sm">&copy; 2024 Endie_pro. Tous droits réservés.</p>
+        <p class="text-xs sm:text-sm">&copy; 2024 Endie_pro. Tous droits réservés.</p>
     </footer>
 </body>
 
